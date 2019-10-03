@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <button id="button"><span>клик</span>
+            <div id="name"></div>
+        </button>
+       
+    </div>
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+  $('#button').click(function() {
+    $('#name').html(+$('#name').html()+1);
+  });
+});
+</script>
+</html>
